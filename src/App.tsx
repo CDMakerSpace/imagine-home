@@ -6,6 +6,7 @@ import acronymIcon from '../Images/acronym.png';
 import makerspaceIcon from '../Images/makerspace.png';
 import futureLabIcon from '../Images/future_lab.png';
 import imageIcon from '../Images/image.png';
+import churchDwightLogo from '../Images/Church_&_Dwight_logo.svg.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -70,7 +71,7 @@ function App() {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="Images\Church_&_Dwight_logo.svg.png" 
+                  src={churchDwightLogo} 
                   alt="Church & Dwight Logo" 
                   className="h-8"
                 />
