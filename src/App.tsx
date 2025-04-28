@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Sun, Moon, ExternalLink } from 'lucide-react';
+import patentIcon from '../Images/patent.png';
+import n8nIcon from '../Images/n8n-color.png';
+import acronymIcon from '../Images/acronym.png';
+import makerspaceIcon from '../Images/makerspace.png';
+import futureLabIcon from '../Images/future_lab.png';
+import imageIcon from '../Images/image.png';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -20,37 +26,37 @@ function App() {
   const cards = [
     {
       title: 'N8N',
-      icon: <img src="Images/n8n-color.png" width="48" height="48" />,
+      icon: <img src={n8nIcon} width={48} height={48} />,
       description: 'Create your own workflows to automate tedious tasks',
       url: 'https://n8n-imagine.onrender.com/'
     },
     {
       title: 'PatentGPT',
-      icon: <img src="Images/patent.png" width="48" height="48" />,
+      icon: <img src={patentIcon} width={48} height={48} />,
       description: 'Generate patent ideas and descriptions or find workarounds with AI',
       url: 'https://patent.cd-imagine.today/'
     },
     {
       title: 'Futuristic Lab',
-      icon: <img src="Images/future_lab.png" width="48" height="48" />,
+      icon: <img src={futureLabIcon} width={48} height={48} />,
       description: 'Explore the future of labs with AI and automation',
       url: 'https://lot.cd-imagine.today/'
     },
     {
       title: 'Acronym Dictionary',
-      icon: <img src="Images/acronym.png" width="48" height="48" />,
+      icon: <img src={acronymIcon} width={48} height={48} />,
       description: 'Get a general feel for products before consumer studies',
       url: 'https://acronyms.cd-imagine.today/'
     },
     {
       title: 'Image Generator',
-      icon: <img src="Images/image.png" width="48" height="48" />,
+      icon: <img src={imageIcon} width={48} height={48} />,
       description: 'Generate images based on your ideas and concepts',
       url: 'https://img-prompt-gen.cd-imagine.today/'
     },
     {
       title: 'Makerspace Asistant',
-      icon: <img src="Images/makerspace.png" width="48" height="48" />,
+      icon: <img src={makerspaceIcon} width={48} height={48} />,
       description: 'Get help with machines for projects in the makerspace',
       url: 'https://makerspace-assistant.cd-imagine.today/'
     }
